@@ -1,0 +1,168 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <title>Used Car Price Prediction</title>
+  </head>
+  <body>
+    <div class="img" style="background-image: url(static/images/b.jpg);"></div>
+    <nav class="navbar navbar-expand-md bg-dark">
+      <a href="" class="navbar-brand fs-3 ms-3 text-white">Used Car Price Prediction</a>
+    <button class="navbar-toggler me-3 text-black" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+      <i class='bx bx-menu bx-md'></i>
+    </button>
+    <div class="collapse navbar-collapse ul-bg" id="btn">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="{{url_for('home')}}" class="nav-link mx-3 text-white fs-5">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link mx-3 text-white fs-5">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{url_for('card')}}" class="nav-link mx-3 text-white fs-5">Gallery</a>
+        </li>
+    </ul>
+    </div>
+  </nav>
+  <div class="container text-white">
+    <h2 class="mt-5 text-center">About Us</h2>
+    
+    <p class="text-center">With economic conditions, the number of cars increases and there is also a rise in sales of used cars.
+       It is difficult for customers to estimate the price of a used car. Only with the help of experts can predictions for car prices be achieved. 
+       The experts' predictions were not enough to identify the fair price of cars.<br>
+       While predicting the price of used cars, it depends on entirely different features and factors.
+        Most significant features are selling price, model of car and also fuel type. 
+        The most popular ingredient for a car is type of fuel and the volume of fuel it consumes for each mile.
+        It is also considered due to its frequent price changes.Aims to develop a machine 
+        learning model that can accurately predict the price of a used car based on its features, in order to make informed purchases by customers.
+
+    </p>
+<section class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-white text-center my-5">Meet Our Team Member</h2>
+    </div>
+    <div class ="col-xs-9 col-sm-6 col-md-3">
+      <div class="shadow d-flex justify-content-center align-items-center p-3 bg-dark rounded-lg flex-column">
+        <div class="team lead">
+          <img src="static/images/ky.jpg" class=" img-fluid rounded-circle"  alt="Karma Yangzom">
+        </div>
+        <div class="person-name my-2">
+          <h3 class="text-white">Karma Yangzom</h3>
+        </div>
+        <div class="info">
+          <h6 class="text-white">Team Leader</h6>
+        </div>
+        <div class="social-icons my-2">
+          <a href="https://www.facebook.com/" class="text-white"><i class="fa fa-facebook p-2" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/" class="text-white"><i class="fa fa-instagram p-2" aria-hidden="true"></i></a>
+          <a href="https://support.google.com/mail/answer/56256?hl=en" class="text-white"><i class="fa fa-square-envelope p-2" aria-hidden="true"></i></a>
+        </div>
+        <!-- <button class="button" class="btn btn-secondary btn-lg btn-bock">View Profile</button> -->
+
+      </div>
+
+    </div>
+
+    <div class ="col-xs-9 col-sm-6 col-md-3">
+      <div class="shadow d-flex justify-content-center align-items-center p-3 bg-dark rounded-lg flex-column">
+        <div class="team lead">
+          <img src="static/images/kd.jpg" class=" img-fluid rounded-circle"  alt="Kinzang Dorji">
+        </div>
+        <div class="person-name my-2">
+          <h3 class="text-white">Kinzang Dorji</h3>
+        </div>
+        <div class="info">
+          <h6 class="text-white">Lead Programmer</h6>
+        </div>
+        <div class="social-icons my-2">
+          <a href="https://www.facebook.com/" class="text-white"><i class="fa fa-facebook p-2" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/" class="text-white"><i class="fa fa-instagram p-2" aria-hidden="true"></i></a>
+          <a href="https://support.google.com/mail/answer/56256?hl=en" class="text-white"><i class="fa fa-square-envelope p-2" aria-hidden="true"></i></a>
+        </div>
+        <!-- <button class="button" class="btn btn-secondary btn-lg btn-bock">View Profile</button> -->
+
+      </div>
+
+    </div>
+
+    <div class ="col-xs-9 col-sm-6 col-md-3">
+      <div class="shadow d-flex justify-content-center align-items-center p-3 bg-dark rounded-lg flex-column">
+        <div class="team lead">
+          <img src="static/images/sc.jpg" class=" img-fluid rounded-circle"  alt="Sonam Choki">
+        </div>
+        <div class="person-name my-2">
+          <h3 class="text-white">Sonam Choki</h3>
+        </div>
+        <div class="info">
+          <h6 class="text-white">UI Designer</h6>
+        </div>
+        <div class="social-icons my-2">
+          <a href="https://www.facebook.com/" class="text-white"><i class="fa fa-facebook p-2" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/" class="text-white"><i class="fa fa-instagram p-2" aria-hidden="true"></i></a>
+          <a href="https://support.google.com/mail/answer/56256?hl=en" class="text-white"><i class="fa fa-square-envelope p-2" aria-hidden="true"></i></a>
+        </div>
+        <!-- <button class="button" class="btn btn-secondary btn-lg btn-bock">View Profile</button> -->
+
+      </div>
+
+    </div>
+
+    <div class ="col-xs-9 col-sm-6 col-md-3">
+      <div class="shadow d-flex justify-content-center align-items-center p-3 bg-dark rounded-lg flex-column">
+        <div class="team lead">
+          <img src="static/images/nima.jpg" class=" img-fluid rounded-circle"  alt="Karma Yangzom">
+        </div>
+        <div class="person-name my-2">
+          <h3 class="text-white">Nima Gyaltshen</h3>
+        </div>
+        <div class="info">
+          <h6 class="text-white">Database Designer</h6>
+        </div>
+        <div class="social-icons my-2">
+          <a href="https://www.facebook.com/" class="text-white"><i class="fa fa-facebook p-2" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/" class="text-white"><i class="fa fa-instagram p-2" aria-hidden="true"></i></a>
+          <a href="https://support.google.com/mail/answer/56256?hl=en" class="text-white"><i class="fa fa-square-envelope p-2" aria-hidden="true"></i></a>
+        </div>
+        <!-- <button class="button" class="btn btn-secondary btn-lg btn-bock">View Profile</button> -->
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section> 
+</div>
+<br>
+<br>
+<br>
+<br>
+<footer>
+  <div class="py-4 bg-dark text-gray-300">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-15 text-center text-md-strat">
+          <p class="text-sm text-center text-white mb-md-0">2022@MINIPROJECT-ITS307</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
